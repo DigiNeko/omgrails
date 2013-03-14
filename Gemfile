@@ -5,8 +5,16 @@ gem 'rails', '3.2.12'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+#Modified during the one month rails course
+group :production do
+  gem 'pg'
+end
 
+group :development, :test do
+  gem 'sqlite3'
+end
+
+#modification made so that data from github could be pushed to Heroku cloud service
 
 # Gems used only for assets and not required
 # in production environments by default.
