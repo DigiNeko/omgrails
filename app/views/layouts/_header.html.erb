@@ -1,0 +1,34 @@
+    <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+    <div class="container">
+     
+    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </a>
+     
+    <!-- Be sure to leave the brand out there if you want it shown -->
+    <%= link_to "digital-cat nap", root_path, class: "brand" %>
+	
+     
+    <!-- Everything you want hidden at 940px or less, place within here -->
+    <div class="nav-collapse collapse">
+		<ul class="nav">
+			<li><%= link_to "Home", root_path %></li>
+			<li><%= link_to "A boot", about_path %></li>
+			<li><%= link_to "Page Making", pgcreation_path %></li>
+			<li><%= link_to "Flash Fiction", flashfiction_path %></li>
+		</ul>
+		<ul class="nav pull-right">
+			<li><%= link_to "Join Github", "https://help.github.com/articles/set-up-git" %></li>
+			<li><%= link_to "Get Ruby on Rails!", "http://railsinstaller.org/" %></li>
+		</ul>
+    </div>
+     
+    </div>
+    </div>
+    </div>
+ 
+ 

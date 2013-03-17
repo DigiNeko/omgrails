@@ -1,0 +1,36 @@
+<h1> OMGRails! Let's learn some Ruby web code!</h1>
+
+<p>
+	In order to use some ruby on rails code to make a hyperlink (so hyper), 
+	you want to utilize the % and the word "link_to" instead of your common href= for html (along with those carrot a's <+a)
+	
+	So it will look like 
+	<
+	%
+	=
+	link_to
+	quotation mark
+	What you want the person to see as the name of the hyperlink
+	close quotation mark,
+	quotation mark
+	the actual address of the link
+	close quotation mark
+	%
+	>
+	But all in one line.
+</p>
+<p>
+
+	So the result should look like this
+	<%= link_to "Hyperlink zipping you through the internet at the speed of click!", "https://github.com/DigiNeko/digital-cat-nap" %>
+</p>
+<p>
+
+	When loaded up on the page and if inspected, it will generate as if you had used the href= code. This is an example of Ruby doing something for you.
+	It saves you time from having to remember how to setup a hyperlink with html code... and it saves you the grief of remembering to put in <"/"a> [minus the /] to close the code line.
+	Instead you use less and have Ruby do the work for you.  Yay~.
+</p>
+
+<p> 
+Remember, in order to see what is happening on this page you want to right click in the browser and select "inspect elements". 
+</p>

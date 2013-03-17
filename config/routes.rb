@@ -1,4 +1,12 @@
 Omgrails::Application.routes.draw do
+  #creates a route for the about page
+  get 'about' => 'pages#about'
+  get 'pgcreation' => 'pages#pgcreation'
+  get 'flashfiction' => 'pages#flashfiction'
+  
+  #originally was get "pages/home" was changed to a root type startup
+  root :to => 'pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
