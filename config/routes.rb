@@ -1,4 +1,8 @@
 Omgrails::Application.routes.draw do
+  devise_for :users
+
+  #devise_for :users
+
   #creates a route for the about page
   get 'about' => 'pages#about'
   get 'pgcreation' => 'pages#pgcreation'
