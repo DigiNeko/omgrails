@@ -1,4 +1,7 @@
 Omgrails::Application.routes.draw do
+  resources :pins
+
+
   devise_for :users
 
   #devise_for :users
@@ -9,7 +12,7 @@ Omgrails::Application.routes.draw do
   get 'flashfiction' => 'pages#flashfiction'
   
   #originally was get "pages/home" was changed to a root type startup
-  root :to => 'pages#home'
+  root :to => 'pins#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

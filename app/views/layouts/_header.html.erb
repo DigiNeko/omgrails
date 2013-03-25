@@ -1,4 +1,4 @@
-    <div class="navbar navbar-fixed-top">
+<div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
     <div class="container">
      
@@ -25,6 +25,7 @@
 			<li><%= link_to "Join Github", "https://help.github.com/articles/set-up-git" %></li>
 			<li><%= link_to "Get Ruby on Rails!", "http://railsinstaller.org/" %></li>
 			<% if user_signed_in? %>
+				<li><%= link_to "Add Pictures+", new_pin_path %></li>
 				<li><%= link_to "Edit Profile", edit_user_registration_path %></li>
 				<li><%= link_to "Logout!", destroy_user_session_path, method: :delete %></li>
 			<% else %>
@@ -35,6 +36,5 @@
      
     </div>
     </div>
-    </div>
- 
- 
+</div>
+<% end %>
